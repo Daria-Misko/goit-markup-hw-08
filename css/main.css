@@ -30,8 +30,7 @@
   --bg-color-cards: #f5f4fa;
   --border-cards-color: #eeeeee;
   --social-icon-color: #afb1b8;
-  --linear-bg: (rgba(47, 48, 58, 0.4),
-  		rgba(47, 48, 58, 0.4));
+  --linear-bg: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 body {
@@ -567,7 +566,7 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  background-image: var(--linear-bg), url(../images/bg-mobile.jpg);
+  background-image: var(--linear-bg), url(/);
   margin: 0 auto;
   padding: 118px 0;
 }
