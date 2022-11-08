@@ -1,0 +1,108 @@
+.team {
+	background-color: var(--bg-color-cards);
+
+	@include mobile {
+		padding: 60px 0;
+	}
+
+	@include desktop {
+		padding: 94px 0;
+	}
+}
+
+.team__list {
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	p {
+		color: var(--main-color-text);
+		@include fs(16px, 500, 1.18, null);
+		text-align: center;
+		margin-bottom: 16px;
+
+	}
+}
+
+.team__card {
+	padding-bottom: 30px;
+	background-color: var(--color-white);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+
+	@include mobile {
+		margin-bottom: 30px;
+	}
+
+	@include tablet {
+		width: calc((100% - 30px) / 2);
+	}
+
+	@include desktop {
+		width: calc((100% - 90px) / 4);
+	}
+}
+
+.team__name {
+	@include fs(16px, 500, 1.18, null);
+	margin: 30px 0px 10px 0px;
+	text-align: center;
+}
+
+.social-links {
+	display: flex;
+	margin: 0 auto;
+	gap: 10px;
+
+	@include mobile {
+		padding: 0 122px;
+	}
+
+	@include tablet {
+		padding: 0 74px;
+	}
+
+	@include desktop {
+		padding: 0 32px;
+	}
+}
+
+.social-link {
+	width: 44px;
+	height: 44px;
+	color: var(--color-white);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: var(--color-blue);
+	}
+}
+
+.svg-instagram {
+	fill: var(--social-icon-color);
+
+	transition-property: fill;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		fill: currentColor;
+	}
+
+	.social-link:hover &,
+	.social-link:focus & {
+		fill: currentColor;
+	}
+}

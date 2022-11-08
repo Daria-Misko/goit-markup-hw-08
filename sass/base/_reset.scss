@@ -1,0 +1,47 @@
+body {
+	color: var(--main-color-title);
+	background-color: var(--color-white);
+	font-family: "Roboto", sans-serif;
+	@include fs(14px, 400, 1.17, 0.03em);
+}
+
+a {
+	text-decoration: none;
+	letter-spacing: 0.03em;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin-top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+button {
+	cursor: pointer;
+}
+p {
+	margin: 0;
+	padding: 0;
+}

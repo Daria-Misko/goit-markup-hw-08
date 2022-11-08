@@ -1,0 +1,19 @@
+.general-button {
+	font-family: inherit;
+	color: var(--color-white);
+	background-color: var(--color-blue);
+	@include fs(16px, 700, 1.87, 0.06em);
+	text-align: center;
+	border: none;
+	border-radius: 4px;
+	min-width: 216px;
+	padding: 10px 0;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+	background-color: var(--hover-button);
+}
+}
