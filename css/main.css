@@ -85,6 +85,10 @@ p {
   padding: 0;
 }
 
+.no-scroll {
+  Overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -759,11 +763,7 @@ header {
 
 .team {
   background-color: var(--bg-color-cards);
-}
-@media screen and (min-width: 480px) {
-  .team {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .team {
@@ -796,6 +796,7 @@ header {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
   .team__card {
@@ -827,6 +828,12 @@ header {
   display: flex;
   margin: 0 auto;
   gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 480px) {
   .social-links {
