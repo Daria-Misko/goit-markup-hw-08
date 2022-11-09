@@ -13,6 +13,11 @@ footer {
 }
 
 .footer-group {
+	@media screen and (max-width:1199px) {
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
 	@include tablet {
 		display: flex;
 		align-items: baseline;
@@ -23,6 +28,7 @@ footer {
 
 	@include desktop {
 		gap: 70px;
+		margin-bottom: 0;
 	}
 }
 
@@ -37,16 +43,16 @@ footer {
 .contact-info-footer {
 	font-style: normal;
 	line-height: 1.71;
-
-	@media screen and (max-width:767px	) {
-		margin-bottom: 60px;
-	}
 	& a:hover,
 	& a:focus {
 		color: var(--color-blue);
 	}
 }
-
+.info-footer {
+	@media screen and (max-width:767px) {
+			margin-bottom: 60px;
+		}
+}
 .logo--footer {
 	display: block;
 	margin-bottom: 20px;
@@ -83,7 +89,6 @@ footer {
 	@media screen and (max-width:1199px) {
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 60px;
 	}
 }
 

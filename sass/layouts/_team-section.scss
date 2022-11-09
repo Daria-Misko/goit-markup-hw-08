@@ -29,12 +29,19 @@
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 	margin-bottom: 20px;
-	@include mobile {
-		margin-bottom: 30px;
+	&:not(:last-child) {
+	@media screen and (max-width:767px) {
+			margin-bottom: 30px;
+		}
 	}
-
+	&:last-child {
+		@media screen and (max-width:767px) {
+			margin-bottom: 0;
+		}
+	}
 	@include tablet {
 		width: calc((100% - 30px) / 2);
+		margin-bottom: 0;
 	}
 
 	@include desktop {

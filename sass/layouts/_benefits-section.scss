@@ -16,6 +16,11 @@
 }
 
 .benefits__item {
+	&:not(:last-child) {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 30px;
+	}
+	}
 	@media screen and (min-width:768px) {
 		width: calc((100% - 30px) / 2);
 	}
@@ -65,5 +70,5 @@
 .benefits__text {
 	color: var(--main-color-text);
 	line-height: 1.71;
-	margin: 0 0 30px 0;
+	// margin: 0 0 30px 0;
 }

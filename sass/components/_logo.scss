@@ -1,5 +1,8 @@
 .logo {
 	color: var(--color-blue);
 	font-family: "Raleway", sans-serif;
-	@include fs(26px, 700, 1.19, null);
+	@include fs(24px, 700, 1.16, null);
+	@include desktop {
+		@include fs(26px, 700, 1.19, null);
+	}
 }
